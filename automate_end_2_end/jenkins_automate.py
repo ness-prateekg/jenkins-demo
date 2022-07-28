@@ -114,7 +114,7 @@ def create_job(job_name,xml, found_job, build = False):
             server.reconfig_job(job_name,xml)
             print(f"Reconfigured job: {job_name}")
         if build == True:
-                server.build_job(job_name, {'BRANCH_NAME': 'testing',  'SLAVE':'Gitlab-Jenkins-slave-msbuild-15-VM'})
+                server.build_job(job_name, {'BRANCH_NAME': 'testing', 'SLAVE':'Gitlab-Jenkins-slave-msbuild-15-VM'})
     except Exception as exc:
         print(exc)
         return False
@@ -151,22 +151,3 @@ def prepare_build_parameters(git_url, git_credential_id, branch, jenkins_job_nam
         "jenkins_file":jenkinsFile_path
         })
     return dict_parameters
-
-# def get_job_name(repo_name):
-    
-
-if __name__ == "__main__":
-    dict_parameters = {}
-    
-    # jobs = pd.read_csv('job_list.csv')
-    # for idx, val in jobs.iterrows():
-    #     job_name = val['job_name']
-    #     found_job = get_job_details(job_name=job_name)
-    #     dict_parameters = prepare_build_parameters(git_url="gitlab@tlvgit03.nice.com:ActimizeDeployer/cs-solution.git", git_credential_id='act_fmc_ci_user',jenkins_job_name=job_name,branch = 'testing', jenkinsFile_path='pipeline/cs_solution_generic_build/Jenkinfiles_msbuild.groovy')
-    #     code_startup(dict_parameters, found_job)
-    #     print(f"Created/ Reconfigured: {job_name}")
-    job_name = "Erlang"
-    found_job = get_job_details(job_name=job_name)
-    dict_parameters = prepare_build_parameters(git_url="gitlab@tlvgit03.nice.com:ActimizeDeployer/cs-solution.git", git_credential_id='act_fmc_ci_user',jenkins_job_name=job_name,branch = 'testing', jenkinsFile_path='pipeline/cs_solution_generic_build/Jenkinfiles_msbuild.groovy')
-    code_startup(dict_parameters, found_job, build=True)
-    print(f"Created/ Reconfigured: {job_name}")

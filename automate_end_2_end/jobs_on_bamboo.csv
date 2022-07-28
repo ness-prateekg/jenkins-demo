@@ -1,0 +1,1145 @@
+job_name,planKey
+ChartToAggregateVersionChecker,AL-CAVC
+DKMSTALA,AL-DKMSTAL
+CoreApi,API-CORAPI
+CyberTech.CoreApi.Communications,API-CYBCAC
+CyberTech.UserManager,API-CYBUSMN
+ApplicationFramework.Jobs,APFJOBS-AFJ
+ApplicationFramework.Jobs.Plugins.DES,APFJOBS-APJD
+ApplicationFramework.Jobs.Plugins.HistoricalIndexing.NTR,APFJOBS-INDEXNTR
+ApplicationFramework.Jobs.Plugins.Reporting.HIJ,APFJOBS-REPHIJ
+ApplicationPlugins.CentralRecorderManagement,AP-APCRM
+ApplicationPlugins.CommunicationPlatforms,AP-ESSPLATFORM
+ApplicationPlugins.DesConfiguration,AP-DES
+ApplicationPlugins.ElasticConfiguration,AP-APLEC
+ApplicationPlugins.Fusion.Alarms,AP-APFAM
+ApplicationPlugins.Fusion.AuditTrail,AP-APADT
+ApplicationPlugins.Fusion.CallSearch,AP-APFCS
+ApplicationPlugins.Fusion.GlobalSettings,AP-APFGS
+ApplicationPlugins.Fusion.LitigationHoldRules,AP-APLHR
+ApplicationPlugins.Fusion.NtrClustersAdministration,AP-APNCA
+ApplicationPlugins.Fusion.NtrClustersStatus,AP-APNCS
+ApplicationPlugins.Fusion.UserAdministration,AP-APFUA
+ApplicationPlugins.KibanaDashboard,AP-APKD
+ApplicationPlugins.Labels,AP-APL
+ApplicationPlugins.Monitoring,AP-APFBM
+ApplicationPlugins.RandomSampling,AP-APRS
+ApplicationPlugins.Reconciliation,AP-APREC
+ApplicationPlugins.ReconciliationConfiguration,AP-APR
+ApplicationPlugins.RoleConfiguration,AP-APPRC
+ApplicationPlugins.SearchAndReplay,AP-AP
+Nice.AppPlugins.FieldConfiguration,AP-APPFC
+ComponentSetup.BT,ASF-COMSBT
+AIE4.4_NiceModules_debug,AT-AIE4
+BildWorkspace,AT-BIL
+BuildAWS,AT-BUIL
+BuildAWS2,AT-BUIL2
+BUILDAWS3,AT-BUIL3
+BuildExchange,AT-BEXC
+BuildExchangeLibContent,AT-BUILLC
+Building 4.X,AT-B4
+Communication Intelligence Export,AT-CIE
+ConfluencePlayground,AT-CON
+Deploy AIE Libs,AT-DAL
+Deploy AIE4.4 Libs,AT-DAL4X
+HolisticVisualisation,AT-HOL
+nice-components,AT-NIC
+nice-exchange,AT-EX
+nice-exchange-nant,AT-NICN
+Attivio 4X Nice Modules ObserveV2 Only,AS-A4NMOO
+Attivio 4X Nice Modules TRC Only,AS-A4NMYO
+attivio-4.x-nice-aie.bloomberg,AS-NCB
+attivio-4.x-nice-aie.trc,AS-TCTRC
+Attivio_3.5_Master,AS-AT
+Attivio_3.5_Master_maven-local,AS-ATML
+Attivio_3.5_NiceModules,AS-AT35
+Attivio_4.X.NiceModules_RabbitMQ_Upgrade,AS-ATRU
+Attivio_4.X_NiceModules,AS-AT4X
+NICE Attivio_Project,AS-NA
+TRC Integration Tests Temporary Plan,AS-TITTP
+Corelibraries.Automation,AUT-COR
+CoreLibraries.Integrations.Automation,AUT-INTAUT
+CoreLibraries.WebAutomation,AUT-CWA
+CoreLibraries.WebAutomation.Allure,AUT-CLA
+Foxdroid,AUT-FOXD1
+PowerTest Deployment,AUT-PTD
+RecordingCheck.Agent,AUT-PTA
+RecordingCheck.Agent.BlueWave,AUT-RCKBWV
+RecordingCheck.Agent.JTAPI,AUT-RCKAGJTAPI
+RecordingCheck.Client,AUT-RCKCLIENT
+RecordingCheck.ConfigurationPlugin,AUT-RCKCONF
+RecordingCheck.ConfigurationService,AUT-RCS
+RecordingCheck.Contracts,AUT-PTC
+RecordingCheck.Contracts.Client,AUT-RCC
+RecordingCheck.DBInterface.Client,AUT-RCKDBICL
+RecordingCheck.DBInterface.Contracts,AUT-RCKDBIC
+RecordingCheck.DBInterface.Service,AUT-RCKDBI
+RecordingCheck.IntegrationTest,AUT-RCKIT
+RecordingCheck.JobWorkerPlugin,AUT-RCKJOBPLUGIN
+RecordingCheck.JobWorkerPlugin.UI,AUT-REC
+RecordingCheck.NtrService,AUT-PTNTR
+RecordingCheck.Portal,AUT-RCP
+RecordingCheck.PsModule,AUT-PTPM
+RecordingCheck.Server,AUT-PTS
+RecordingTestMonitor,AUT-RTM
+IntegrationSetup.Avaya.Aura,AVAYA-SETUP
+LinkController.Avaya,AVAYA-LINK
+LinkController.Avaya.BRA-4.4.1,AVAYA-LIN
+LinkController.Avaya.BRA-v4.2.10,AVAYA-LINAVA
+ArtifactoryCleaner,BAM-ARCL
+BuildFarmCheckoutAgent0,BAM-BLD0
+BuildFarmCheckoutAgent1,BAM-BLD1
+BuildFarmCheckoutAgent10,BAM-BLD10
+BuildFarmCheckoutAgent11,BAM-BLD11
+BuildFarmCheckoutAgent12,BAM-BLD12
+BuildFarmCheckoutAgent13,BAM-BLD13
+BuildFarmCheckoutAgent14,BAM-BLD14
+BuildFarmCheckoutAgent15,BAM-BLD15
+BuildFarmCheckoutAgent16,BAM-BLD16
+BuildFarmCheckoutAgent17,BAM-BLD17
+BuildFarmCheckoutAgent18,BAM-BLD18
+BuildFarmCheckoutAgent19,BAM-BLD19
+BuildFarmCheckoutAgent2,BAM-BLD2
+BuildFarmCheckoutAgent20,BAM-BLD20
+BuildFarmCheckoutAgent21,BAM-BLD21
+BuildFarmCheckoutAgent22,BAM-BLD22
+BuildFarmCheckoutAgent23,BAM-BLD23
+BuildFarmCheckoutAgent24,BAM-BLD24
+BuildFarmCheckoutAgent25,BAM-BLD25
+BuildFarmCheckoutAgent26,BAM-BLD26
+BuildFarmCheckoutAgent27,BAM-BLD27
+BuildFarmCheckoutAgent28,BAM-BLD28
+BuildFarmCheckoutAgent29,BAM-BLD29
+BuildFarmCheckoutAgent3,BAM-BLD3
+BuildFarmCheckoutAgent30,BAM-BLD30
+BuildFarmCheckoutAgent31,BAM-BLD31
+BuildFarmCheckoutAgent32,BAM-BLD32
+BuildFarmCheckoutAgent33,BAM-BLD33
+BuildFarmCheckoutAgent34,BAM-BLD34
+BuildFarmCheckoutAgent35,BAM-BLD35
+BuildFarmCheckoutAgent36,BAM-BLD36
+BuildFarmCheckoutAgent37,BAM-BLD37
+BuildFarmCheckoutAgent38,BAM-BLD38
+BuildFarmCheckoutAgent39,BAM-BLD39
+BuildFarmCheckoutAgent4,BAM-BLD4
+BuildFarmCheckoutAgent40,BAM-BLD40
+BuildFarmCheckoutAgent41,BAM-BLD41
+BuildFarmCheckoutAgent42,BAM-BLD42
+BuildFarmCheckoutAgent43,BAM-BLD43
+BuildFarmCheckoutAgent44,BAM-BLD44
+BuildFarmCheckoutAgent45,BAM-BLD45
+BuildFarmCheckoutAgent46,BAM-BLD46
+BuildFarmCheckoutAgent47,BAM-BLD47
+BuildFarmCheckoutAgent48,BAM-BLD48
+BuildFarmCheckoutAgent49,BAM-BLD49
+BuildFarmCheckoutAgent5,BAM-BLD5
+BuildFarmCheckoutAgent6,BAM-BLD6
+BuildFarmCheckoutAgent7,BAM-BLD7
+BuildFarmCheckoutAgent8,BAM-BLD8
+BuildFarmCheckoutAgent9,BAM-BLD9
+BuildFarmCheckoutAgentUTA,BAM-BUTA
+BuildScriptsAgent100,BAM-BUIL100
+BuildScriptsAgent101,BAM-BUIL101
+BuildScriptsAgent101 - old,BAM-BUIL
+BuildScriptsAgent102,BAM-BUIL102
+BuildScriptsAgent103,BAM-BUIL103
+BuildTagger,BAM-BLDTGGR
+NCover,BAM-NCOV
+NightlyAgent0,BAM-NIG0
+NightlyAgent1,BAM-NIG1
+NightlyAgent10,BAM-NIG10
+NightlyAgent11,BAM-NIG11
+NightlyAgent12,BAM-NIG12
+NightlyAgent13,BAM-NIG13
+NightlyAgent14,BAM-NIG14
+NightlyAgent15,BAM-NIG15
+NightlyAgent16,BAM-NIG16
+NightlyAgent17,BAM-NIG17
+NightlyAgent18,BAM-NIG18
+NightlyAgent19,BAM-NIG19
+NightlyAgent2,BAM-NIG2
+NightlyAgent20,BAM-NIG20
+NightlyAgent21,BAM-NIG21
+NightlyAgent22,BAM-NIG22
+NightlyAgent23,BAM-NIG23
+NightlyAgent24,BAM-NIG24
+NightlyAgent25,BAM-NIG25
+NightlyAgent26,BAM-NIG26
+NightlyAgent27,BAM-NIG27
+NightlyAgent28,BAM-NIG28
+NightlyAgent29,BAM-NIG29
+NightlyAgent3,BAM-NIG3
+NightlyAgent30,BAM-NIG30
+NightlyAgent31,BAM-NIG31
+NightlyAgent32,BAM-NIG32
+NightlyAgent33,BAM-NIG33
+NightlyAgent34,BAM-NIG34
+NightlyAgent35,BAM-NIG35
+NightlyAgent36,BAM-NIG36
+NightlyAgent37,BAM-NIG37
+NightlyAgent38,BAM-NIG38
+NightlyAgent39,BAM-NIG39
+NightlyAgent4,BAM-NIG4
+NightlyAgent40,BAM-NIG40
+NightlyAgent41,BAM-NIG41
+NightlyAgent42,BAM-NIG42
+NightlyAgent43,BAM-NIG43
+NightlyAgent44,BAM-NIG44
+NightlyAgent45,BAM-NIG45
+NightlyAgent46,BAM-NIG46
+NightlyAgent47,BAM-NIG47
+NightlyAgent48,BAM-NIG48
+NightlyAgent49,BAM-NIG49
+NightlyAgent5,BAM-NIG5
+NightlyAgent6,BAM-NIG6
+NightlyAgent7,BAM-NIG7
+NightlyAgent8,BAM-NIG8
+NightlyAgent9,BAM-NIG9
+NuGetCop,BAM-NGC
+Plan Checker,BAM-PC
+ReleaseCop,BAM-RELCOP
+Run Automated Test,BAM-RAT
+TestRunner,BAM-TR
+ThirdPartyCop,BAM-TPC
+VMware,BAM-VMWAR
+Zip,BAM-ZIP
+Agent,BAMA-AG1
+AgentBuilder,BAMA-UBAB
+BranchChecker,BAMA-BRAN
+BuildAgentBuilder,BAMA-BUIL
+FillAutomationPools,BAMA-FIL
+LinuxAgent,BAMA-LINA
+LinuxAgentBuilder,BAMA-LIN
+TestAutomationSelectedVmManager,BTA-TAPM
+TestAutomationWipePools,BTA-TAWP
+IntegrationSetup.BT.IP,BTIP-BTIP
+CdrDll.BT.ITS,BTITS-CDRDLLBTIT
+IntegrationSetup.BT-ITS,BTITS-CYB
+CyberTech.Simulators.BT.SIP,BTSIP-SIM
+IntegrationSetup.BT.SIP,BTSIP-SETUP
+LinkController.BT.SIP,BTSIP-LINBT
+CallController,CAL-CAL
+AnnouncementController.Cisco.Cucm.Jtapi,CIC-ACCJ
+Cisco.Jtapi,CIC-CISCOJTAPI
+IntegrationSetup.Cisco.Cucm,CIC-ISCC
+IntegrationSetup.Cisco.Cucm.PreAsf,CIC-CISPASF
+LinkController.Cisco.Cucm.Jtapi,CIC-JTAPILNK
+LinkController.Cisco.Cucm.Sip,CIC-LINCCS
+NTR-X.Azure.Infra,CA-NTRXAZ
+NTR.Azure.Infra,CA-NTRAZI
+Cloud9Integration,CL9-CNINE
+MediaOperations,CL9-MOP
+Genesys,CLDAU-GEN
+Genesys.Setup,CLDAU-GENS
+Nice.CallImport.Setup,CLDAU-NCIS
+NiceCallImport,CLDAU-NIC
+cn-accordion,CNCOM-CNAC
+cn-button,CNCOM-CNBUT
+cn-checkbox,CNCOM-CNCHEC
+cn-datepicker,CNCOM-DATEPICKR
+cn-duration,CNCOM-CNDUR
+cn-filters,CNCOM-CNFIL
+cn-grid,CNCOM-GRID
+cn-header,CNCOM-CNHEAD
+cn-indicator,CNCOM-INDCATOR
+cn-input,CNCOM-INPUT
+cn-loading,CNCOM-CNLOAD
+cn-modal,CNCOM-MODAL
+cn-navigation,CNCOM-NAVIGATION
+cn-player,CNCOM-PLAYER
+cn-progress-bar,CNCOM-CNPROG
+cn-radiobutton,CNCOM-CNRAD
+cn-recorded-entities,CNCOM-CNREC
+cn-scheduler,CNCOM-CNSCHED
+cn-selectlist,CNCOM-SELECTLIST
+cn-sidepanel,CNCOM-SIDEPANEL
+cn-slider,CNCOM-CNSLID
+cn-tabs,CNCOM-TABS
+cn-toast,CNCOM-CNTOAS
+cn-toggle-button,CNCOM-CNTOGBU
+frontend-utils,CNCOM-FRON
+validation_helpers,CNCOM-VALHELP
+OPUS codec,CDDLL-OPUS
+SILK,CDDLL-SILK
+Siren.G.722.1,CDDLL-SIR722
+ActiveIntelligenceEngine.Installer.Utils,CS-AC
+ApplicationFramework.ExternalUserSources,CS-AEUS
+ApplicationFramework.NDRWrapper,CS-NDRW
+ApplicationFramework.Reporting,CS-AP
+ApplicationPlugins.ComplianceReview,CS-CRP
+ApplicationPlugins.ObserveRunnerConfiguration,CS-ORC
+AudioHandler.AuthorizationPlugin,CS-AUD
+AVA Reports,CS-AVA
+AVAInstaller,CS-AI
+Cascade Merging Test,CS-CMT
+Communication Surveillance Installer,CS-CSI
+Communication Surveillance Installer 2.6.0 and older,CS-CSINO
+CommunicationWorkItemPublisher,CS-CWIP
+ConfigurationService,CS-CON
+Connectors,CS-CF
+CS installer Tests extension for CS-7515,CS-CITEFC
+cs-actone,CS-CSAC
+CS-Deployment-Scripts,CS-CSDEP
+CS-RCMPlugins,CS-CSRCMPLUG
+CS.InteractionAPI,CS-CSIN
+csinstallationprerequisites,CS-CSINP
+CSM,CS-CSM
+CSMonitoringReport,CS-CSMON
+EmailFilterService,CS-EFS
+Exchange Reconcilliation Kit,CS-ERK
+IndependentObserve,CS-IOP
+IOSP.REST,CS-HAD
+MLaaS,CS-MLAAS
+MLaaS-MSC,CS-MLAASMSC
+Monitoring Client,CS-MC
+NexidiaSearchgrid.Configurationplugin,CS-NCP
+Nice-AIE Sync Git to SVN,CS-NSGTS
+Nice.ActiveIntelligenceEngine,CS-NAIE
+Nice.ActiveIntelligenceEngine.Core,CS-AIEC
+Nice.ActOneWebServices.Client,CS-NAWSC
+Nice.Application.Database,CS-NAD
+Nice.ApplicationFramework,CS-APF
+Nice.ApplicationFramework.Client,CS-APFC
+Nice.ApplicationPlugins.ComplianceDashboard,CS-CYB
+Nice.ApplicationPlugins.Explorer,CS-CSE
+Nice.ApplicationPlugins.Reconstruction,CS-APPREC
+Nice.AppPlugins.IndexingConfiguration,CS-NICINDEX
+Nice.ComplianceReview,CS-NCR
+Nice.Connector.Attivio,CS-NCA
+Nice.Gateway.Ocelot,CS-NICO
+Nice.Gateway.Ocelot.Configuration,CS-GOC
+Nice.Gateway.Ocelot.Service,CS-NICOS
+Nice.MediaSources.Files,CS-NMSF
+Nice.MediaSources.NIM.MiniBus,CS-NMNM
+Nice.MediaSources.Other,CS-NMO
+Nice.NDR.Synchronization.Attivio,CS-NSNC
+Nice.NTR.InteractionFeeder,CS-NNIF
+Nice.NTRX.ChatFeeder,CS-NICX
+Nice.NTRX.MetaDataFeeder,CS-MDFX
+Nice.QueryLevelReporting,CS-QLR
+Nice.Reporting.CommonDataProvider,CS-NIC
+Nice.SmartIndex.IndexRetentionManager,CS-IRM
+Nice.SpeechConverter-BRA-v1.8.0,CS-SC
+Observe.REST,CS-OB
+Reporting.NIM.DataProvider,CS-REPNIMDP
+ReportingApi.Interface,CS-RAPI
+ReportingApi.SSRS,CS-RAS
+ReviewSelectionFilters.REST,CS-RSFR
+S3Downloader,CS-S3DOW
+Scenario Interaction Exporter,CS-MSNTR
+Smart Index Installer,CS-SII
+SmartIndex.REST.Observe,CS-SRO
+SmartIndexInstaller.Linux,CS-SIIL
+SpeechConverter.QueueingService,CS-SQS
+Supervision.Reconcilliation,CS-SUP
+TestRestAPITagging,CS-TES
+Transcription.API,CS-TAPI
+Transcription.API.Setup,CS-TAPIS
+Transcription.Bootstrapper,CS-TRAN
+TranscriptionAgent,CS-TP
+TranscriptionAgent.Bootstrapper,CS-TAB
+TranscriptionAgent.Interface,CS-TAI
+UIControls.Confirmation,CS-UIC
+UIControls.Dashboard,CS-UICDB
+UIControls.Explorer,CS-UICE
+UIControls.Html5Player,CS-PLAYER
+UIControls.ManualInteractionsImport,CS-UICMII
+Workflow,CS-WOR
+XMLTOJSONUTILITY,CS-XMLTOJ
+MediaSources.NTR.Configuration,CSMS-MSNC
+MediaSources.NTR.Configuration.Interface,CSMS-MNCI
+MediaSources.NTR.ExternalUserSource,CSMS-MNEUS
+MediaSources.NTR.Plugin,CSMS-MED
+MediaSources.NTR.Shared,CSMS-MNS
+MediaSources.NTRX.Plugin,CSMS-MSPX
+MediaSources.NTRX.Shared,CSMS-MNXS
+CS2.5PL4-ApplicationFramework-Patch,CSP-CS25PL4AP
+CS2.5PL4-Explore-Patch,CSP-EXPSRS
+CS2.5PL4-Reconstruction-Patch,CSP-CS25PL4REC
+CS2.5PL4-Reconstruction1.11.3-Patch,CSP-CS25PL4RECFIX3
+CS2.5PL4-with-APF2.9.6-ApplicationFramework-Patch,CSP-CS25PL4WIT
+CS2.5PL5-ComplianceReview-Patch,CSP-CS25PL5COM
+CS2.6PL4-Explore-Patch,CSP-CS26PL4EXPP
+HF CS2.6.10 APF AS,CSP-HFCS2610APFAS
+HF CS2.6.2 APF AS,CSP-HFCS262APFAS
+HF CS2.6.5 APF AS,CSP-HCA
+HF CS2.6.8 APF AS,CSP-HFAPF
+HF CS2.6.8 CR AS,CSP-HCC
+HF CS2.6.9 APF AS,CSP-HCA1
+HF CS3.0.1 APEXP,CSP-APE
+HF CS3.0.1 APF,CSP-APF
+HF CS3.0.1 APF AS,CSP-HF301APFAS
+HF CS3.0.1 APL,CSP-HFAPL
+HF CS3.0.1 CCP,CSP-CCP
+HF CS3.0.1 FUS AS,CSP-HCF
+HF CS3.0.1 MSO AS,CSP-HCM
+HF CS3.0.1 REPS,CSP-REPS
+HF CS3.0.1 REPS and CCP AS,CSP-HCRC
+HF CS3.0.1 SIE SI-PN and SI-AN,CSP-HCSS
+HF CS3.0.1 SIP and SIE SI-PN and SI-AN,CSP-HFSIPSIE
+HF CS3.0.1 SIP PN-SI,CSP-HCSP
+HF CS3.1.0 APF,CSP-HCA31
+HF CS3.1.0 APF AS,CSP-HCAA31
+HF CS4.1.0 APRS,CSP-HFCS410APRS
+HF CS4.2.0 APRS,CSP-HFAPRS
+HF CS4.2.0 AS,CSP-HFAS42
+InstallerDownloader,CSTT-ID
+Nice.SmartIndex.CopyDocuments,CSTT-NIC
+TestDataGenerator,CSTT-TDG
+ApplicationPlugins.UserManagement,FUS-COM
+Compass Smart Index Installer,FUS-CSII
+Compass Smart Index Project,FUS-CSIP
+Compass.Api.Authentication,FUS-FUS
+Compass.Api.Common,FUS-FAC
+Compass.Api.Provisioning,FUS-FAP
+Compass.Api.Setup,FUS-FASUP
+Compass.AuditManagement.ApiPlugin,FUS-FAMA
+Compass.DesKeyExchange,FUS-COMDKE
+Compass.GetUsersAffectedByCOMPASSUpgradeTool,FUS-CMPUT
+Compass.RecorderSso,FUS-COMSSO
+Compass.Reporting.Configuration,FUS-COMRC
+Compass.Reporting.RecordingCheck,FUS-COMRRCK
+Compass.Setup.Customization,FUS-CSC
+Compass.SetupWindows,FUS-SETUP
+Compass.SystemManagement.ApiPlugin,FUS-FSMA
+Compass.UserManagement.ApiPlugin,FUS-FUMA
+CyberTech.AlarmingV2,FUS-AV2
+CyberTech.MAX,FUS-CYB
+CyberTech.TRAX,FUS-TRAX
+DES,FUS-DES
+Fusion.Api.Authentication,FUS-FAPIAH
+Fusion.Api.Common,FUS-FAPIC
+Fusion.Api.Provisioning,FUS-FAPIP
+Fusion.Api.Setup,FUS-FAPIS
+Fusion.AuditManagement.ApiPlugin,FUS-FAPIAU
+Fusion.SystemManagement.ApiPlugin,FUS-FAPISM
+Fusion.UserManagement.ApiPlugin,FUS-FAPIUM
+Nice.COMPASS.Installer,FUS-NIC
+Nice.COMPASS.Installer.Rollback.Automation,FUS-CRA
+NICE.Fusion.Installer-Branch-v2.4,FUS-FIB240
+Reporting.SchedulingPlugin,FUS-REPSP
+SystemOverview.Alarming.Compass,FUS-ALRM
+UserManagement.UI,FUS-CUU
+Automation.Reconciliation,COM-AUT
+Compass.Application,COM-COMREPAPP
+Compass.Auditing,COM-COMA
+Compass.Auditing.Interface,COM-COMAI
+Compass.Common,COM-COMMON
+Compass.Configuration,COM-COMCON
+Compass.Elastic.ConfigurationManager,COM-KIBANADASHBOARD
+Compass.Elastic.ReportWriter,COM-REPWRITER
+Compass.ElasticRetentionManager,COM-COMERM
+Compass.ElasticStack,COM-ELK
+Compass.Reconciliation,COM-RECONCIS
+Compass.RecorderConfiguration,COM-RECCONF
+Compass.ReportData.Web,COM-RDW
+Compass.ReportData.Web.Interface,COM-COMRDWI
+Compass.Reporting (Compass.Reporting.Plugin.Installer),COM-COMREP
+Compass.Reporting.EventDefinitions,COM-REPEVENT
+Compass.Reporting.Interface,COM-CRI
+Compass.Setup,COM-INST
+Compass.SystemHealth,COM-COMSH
+Compass.SystemHealth.Interface,COM-COMSHI
+Compass.Topology,COM-COMT
+Compass.Topology.Interface,COM-COMTI
+Compass.UserAggregations,COM-USRAGG
+FakeDataGenerator,COM-SIM
+Kibana.ServiceWrapper.Setup,COM-KIBANA
+Logstash.ServiceWrapper.Setup,COM-LOGSTASH
+Nice.Reporting.EventLogging,COM-EL
+SharedLibraries.Authorization,COM-SLA
+CyberTech.ActiveIntegrationSetup.Alcatel,CON-CYBAL
+CyberTech.RecorderApi.Demo,CON-RAPID
+Ntrx.Configuration.Editor,CON-NTRXCON
+Setup.AnnouncementService.Sip,CON-SASSIP
+AttivioApi,COR-ATA
+CoreLibraries,COR-CORLBR
+CoreLibraries.Alarming,COR-ALARM
+CoreLibraries.Alarming.Interface,COR-ALARMINT
+CoreLibraries.AppFunction,COR-CORAPF
+CoreLibraries.AspNetCore.Http.Tracing,COR-CORTR
+CoreLibraries.Audio.Construction,COR-CORACS
+CoreLibraries.Audio.Converter,COR-CORACV
+CoreLibraries.Audio.Encryption,COR-CAE
+CoreLibraries.Audio.NMF,COR-CANMF
+CoreLibraries.Audio.Utils,COR-CORAUT
+CoreLibraries.Certificates,COR-CORCTR
+CoreLibraries.CsvFileParser,COR-CORCFP
+CoreLibraries.DataAnnotations,COR-CORDAT
+CoreLibraries.DocumentPersistor,COR-CORDPR
+CoreLibraries.DocumentPersistor.Attivio,COR-DOCPAT
+CoreLibraries.DocumentPersistor.RabbitMQ,COR-CORDPQ
+CoreLibraries.DotNetCoreConfiguration,COR-CORDNCC
+CoreLibraries.Encryption,COR-ENC
+CoreLibraries.Enterprise,COR-CORETP
+CoreLibraries.FeatureToggling,COR-CORFTG
+CoreLibraries.Http.Tracing,COR-CHT
+CoreLibraries.Interface,COR-CORITF
+CoreLibraries.Licensing,COR-CORLIC
+CoreLibraries.Licensing.Native,COR-CLN
+CoreLibraries.Logging,COR-CORLOG
+CoreLibraries.MEF,COR-CORMEF
+CoreLibraries.Native,COR-CORNAT
+CoreLibraries.Native.Database,COR-CORNDB
+CoreLibraries.Nexidia.SearchGrid.Client,COR-CNC
+CoreLibraries.RabbitMQ,COR-CORRMQ
+CoreLibraries.RabbitMQ.Clients,COR-COR2
+CoreLibraries.RabbitMQ.Clients 1.1,COR-CLRMQC
+CoreLibraries.SQL,COR-CSQL
+CoreLibraries.SQL.MySQL,COR-CSM
+CoreLibraries.TestFramework,COR-CORTFW
+CoreLibraries.Wcf,COR-CORWCF
+CoreLibraries.Wix,COR-COR
+ErrorCore.DotNet,COR-ERR
+JetBrains.Annotations.Sources,COR-RESHARPER
+NMF.API,COR-NMFAP
+UI.Angular.Libs,COR-UIAN
+AlpineBuildImage,COW-ABI
+Azure.DevOps.Terraform,COW-AZDO
+dotnetbaseimage,COW-DOT
+dotnetbuildimage,COW-BUILD
+GStreamerAlpineBuilder,COW-GSTREAM
+monobaseimage,COW-MONO
+NTR-X.ProvisioningAutomation,COW-NTRXCD
+NTRX-Infra.Helmchart,COW-NTRXIN
+ntrx-monitoring,COW-NTRXMON
+NTRX.Helmchart,COW-NTRXHEL
+RepositoryCleanup,COW-REP
+CS.SystemOverview.Installer,CSSO-CSSYSI
+CS.SystemOverview.Webservice,CSSO-CSSYS
+CSI2RCM - Installation Package,CS2RCM-PAC
+CCLCProtocol,CTI-CCLCPROT
+CyberTech.Alarming,CYB-CYBALA
+CyberTech.MySql56.Setup,CYB-MYSSET
+CyberTech.RecorderDatabase,CYB-CYBRDB
+CyberTechLibraries,CYB-CYBLIB
+CdrDll.IPC.CDR,CAFD-CDRDLLIP
+CyberTech.DecompressionDll,CAFD-CYBDLL
+CyberTech.RecordingTone,CAFD-CYBRET
+Firmware.RtcpStatistics,CAFD-FIRRTC
+CdrProcessor,CCPAD-CDRPRO
+CyberTech.Simulators.Cisco,CYBSIM-SIMCISCO
+CyberTech.Simulators.EtradealTdmCdr,CYBSIM-ETDM
+CyberTech.Simulators.Generic.SIP,CYBSIM-CYBSIM
+CyberTech.Simulators.IPC.Unigy,CYBSIM-SIMIPCUNIGY
+CyberTech.Simulators.IPTrade.VRC.App,CYBSIM-CYBVRC
+Simulators.BT.ITS,CYBSIM-SIMBTITS
+DaMessageBoard,DA-DAM
+Deploy BOT Plan,DBP-DBP
+first project,DT-FP
+AlarmForwarder,ESS-AL
+AudioFragmentHelper,ESS-AUDFH
+BlueWave.Client,ESS-BWC
+Bootstrapper.Generic,ESS-BOOT
+Bootstrapper.Generic-Branch-v2.7.0,ESS-BSGBRA270
+ComponentSetup.Channels,ESS-CHN
+ComponentSetup.Common,ESS-COMM
+ComponentSetup.CoreExtension,ESS-CWU
+ControllerService.NG,ESS-CTRLS
+CoreLibraries.Connectivity,ESS-NCC
+CoreLibraries.DCMP,ESS-CORDCMP
+CoreLibraries.RecorderDatabase,ESS-CORDB
+CoreLibraries.Srtp,ESS-CORSRTP
+CyberTech.Alarming.ErrorCoreProxy2,ESS-CAECP2
+CyberTech.Licensing,ESS-CYBLIC
+CyberTech.ParrotPci,ESS-CYB
+CyberTech.Rtp,ESS-CYBRTP
+CyberTech.SecureLicenseGenerator,ESS-SLG
+Dbi-Client-Standalone,ESS-DBSOLO
+dbi-server,ESS-DBISRV
+Managed.Sip,ESS-NMSIP
+MonitorTool,ESS-MON
+Nice.FileRestoreTool,ESS-NICFRT
+Nice.Migration.HistoricalUtcIngestion,ESS-HUTC
+SatelliteController,ESS-SATCTRLR
+SipAudioService,ESS-ASSIP
+TranscodingService,ESS-TRS
+CyberTech.Firmware.Dsc.Alcatel,FIRM-CYBAL
+CyberTech.Firmware.Dsc.Analog,FIRM-ANA
+CyberTech.Firmware.Dsc.Analog_MDC1200,FIRM-MDC
+CyberTech.Firmware.Dsc.CTI_E1,FIRM-CTI
+CyberTech.Firmware.Dsc.Definity,FIRM-DEF
+CyberTech.Firmware.Dsc.ELU25,FIRM-ELU
+CyberTech.Firmware.Dsc.Hicom,FIRM-HCOM
+CyberTech.Firmware.Dsc.ISDN2,FIRM-ISDN
+CyberTech.Firmware.Dsc.ISDN_E1,FIRM-CYBISDN
+CyberTech.Firmware.Dsc.ISDN_T1,FIRM-IST1
+CyberTech.Firmware.Dsc.Meridian,FIRM-MER
+CyberTech.Firmware.Dsc.NEC,FIRM-NECV
+CyberTech.Firmware.Dsc.NEC_Dchn,FIRM-NECD
+CyberTech.Firmware.Dsc.PCM32,FIRM-PCM
+CyberTech.Firmware.Dsc.PMR_E1,FIRM-PMR
+CyberTech.Firmware.Dsc.Recovery,FIRM-REC
+CyberTech.Firmware.Dsc.SS7_E1,FIRM-SS7
+CyberTech.Firmware.Dsc.Tadicom,FIRM-TAD
+CyberTech.Firmware.Dsc.Vox_E1,FIRM-VOXE
+CyberTech.Firmware.Dsc.Vox_T1,FIRM-VOXT
+CyberTech.Firmware.Ipc.Alliance,FIRM-CYBFIAL
+CyberTech.Firmware.Sip.Generic,FIRM-CYBSIP
+CyberTech.Firmware.Sip.Nec,FIRM-NEC
+CyberTech.Firmware.Voip.Avaya,FIRM-CYBFRA
+CyberTech.Firmware.Voip.Cisco.Gateway,FIRM-CYBVCG
+CyberTech.Firmware.Voip.Cti,FIRM-CYBCTI
+CyberTech.Firmware.Voip.Nortel,FIRM-NORTEL
+Cybertech.Firmware.Voip.Vox,FIRM-CYB
+Nice.Acme.ISR.IntegrationSetup,FIRM-INISR
+Nice.HelperLibraries.SecureDelete,HEL-SECDEL
+Nice.HelperProjects.Apache.Procrun,HEL-NHPAP
+FirmwareSetup.Template,INTSET-FIRTEMP
+IntegrationSetup.Etrali.Etradeal,INTSET-INEED
+IntegrationSetup.RecordOnDemand.Sip,INTSET-RODSIP
+IntegrationSetup.Siprec,INTSET-NIC
+Nice.TruPhone.SIP.IntegrationSetup,INTSET-TPIS
+IntegrationSetup.Cloud9.C9Trader,ISC9-ISC9
+Atlassian Backup Tool,INT-ABT
+BitBucket.GetInactiveUsers,INT-BGIU
+BitBucket.InactiveBranchChecker,INT-BBIBC
+Cisco.Axl.Client,INT-CAC
+Docker.TestHelper,INT-DTH
+Escrow.DependencyCollector,INT-ESCR
+extentreports-dotnet-cli,INT-EX
+JavaScript.TestRunner,INT-JTR
+Nice.Microsoft.IISRewrite.Utils,INT-NIC
+NuProjWixWizard,INT-NUP
+PassiveNagios,INT-PAS
+PyKPI,INT-PYK
+pyUTC,INT-UTC
+SetupAutomation.TestHelper,INT-SETUPTA
+SlackBot,INT-SLAC
+Software Configuration Management,INT-SCM
+Sonar.Cop,INT-SON
+TestHelpers.Logging.Nunit,INT-THLN
+Vmware.TestHelper,INT-VMTEST
+VmWare.TestVmProvider,INT-VMPROV
+VmWare.TestVmProvider.StabilityTests,INT-VMWAR
+VMWareApp,INT-VMA
+VMwareAppWeb,INT-VAW
+YamlEditor,INT-YAM
+YamlEditor.GUI,INT-YEG
+IntegrationSetup.IPTrade.VRC,IPTRADE-IPTRADEINT
+CyberTech.UserManager.IpcSso,IPCUNIGY-CYBSSO
+IntegrationSetup.IPC.Unigy,IPCUNIGY-IPCUNIGYSETUP
+LinkController.IPC.Unigy,IPCUNIGY-LINIPC
+LinkController.IPC.Unigy.SIP,IPCUNIGY-LINSIP
+CyberTech.ActiveIntegrationSetup.IPC.Alliance,IPVR-IPCAL
+LinkController.Alcatel,LINCTRL-LINALC
+LinkController.Mitel,LINCTRL-LINMIT
+LinkController.Sip.SipRec,LINCTRL-SIPRECLNK
+Linkcontroller.SpeakerBus,LINCTRL-LIN
+SipServer,LINCTRL-SIPSRV
+AudioAdapter.Microsoft.S4B,ML-TCPAUD
+AudioAdapter.Microsoft.S4B.Interface,ML-TCPAUDINT
+EdgeHeaderFilter,ML-EDHEFI
+Integration Kit Microsoft Lync,ML-IK
+Integration Test Microsoft Lync,ML-SA
+IntegrationSetup.Microsoft.SkypeForBusiness,ML-SETUP
+LinkController.Microsoft.Lync,ML-LINK
+LinkController.Microsoft.S4B.BELC,ML-BELC
+Microsoft.ServerAgent,ML-MIC
+Nice.GstreamerPlugins,ML-GSTNICE
+PerformanceTest.Integration,ML-PTI
+PerformanceTest.RtpProxy,ML-PPER
+RtpProxy.Microsoft.lync,ML-RTPPROX
+RtpProxy.Microsoft.lync.Interface,ML-RTPPINT
+TranscodingService.Microsoft.Lync,ML-MLTXC
+Alarming.FrontEnd,DIR-ALFRONT
+Alarming.Manager,DIR-MNHALAR
+Alarming.Node,DIR-ALNODE
+Alarming.Shared,DIR-ALARMINGSHARED
+Alvas.Audio,DIR-AL
+AM.ArchiveDrivers.API,DIR-AMADA
+AM.Archiving,DIR-DIR
+AM.Archiving.Client,DIR-LCMAR
+AM.Archiving.Contracts,DIR-LCMARCH
+AM.Archiving.Encryption,DIR-AMARCHENC
+AM.Configuration.ArchivePolicies.Frontend,DIR-AMAP
+AM.Configuration.Portal,DIR-AMCP
+AM.DataAccess,DIR-AMDA
+AM.Deletion,DIR-AMDEL
+AM.Ingestion,DIR-AM
+AM.Retrieval,DIR-AMR
+Application.BackEnd,DIR-AP
+ApplicationPortal,DIR-POR
+Archiving.Drivers.Azure.Worm,DIR-ADAZW
+Archiving.Drivers.Client,DIR-ADC
+Archiving.Drivers.EmcCentera,DIR-EMCC
+Archiving.Drivers.GCS,DIR-ARGCS
+Archiving.Drivers.GenericPost,DIR-ADGP
+Archiving.Drivers.Interface,DIR-ADI
+Archiving.Drivers.Network,DIR-ADN
+Archiving.Drivers.S3,DIR-DS3
+Archiving.Drivers.S3.Hitachi,DIR-ADS3H
+Archiving.Drivers.S3.IbmCos,DIR-ADS3I
+Archiving.Drivers.S3.Worm,DIR-ADS3W
+Archiving.Drivers.SnapLock,DIR-ADSL
+Audit.FrontEnd,DIR-AUDFRONT
+Audit.Portal,DIR-AUDPT
+Audit.Service,DIR-AUD
+Audit.Shared,DIR-AUDITSHARED
+Authentication.Jwt,DIR-JWT
+Authentication.Ntrx,DIR-AUTNTRX
+Authentication.ServiceToService,DIR-AUTS2S
+Authorization.Claims,DIR-CLAIMS
+BluePrint.LCM.POC,DIR-BLUEP
+BluePrint.LCM.POC.FrontEnd,DIR-BLUEPFRONT
+Certificates.Configuration.Frontend,DIR-CER
+Certificates.Configuration.Portal,DIR-CECP
+ChangeRequests.Frontend,DIR-CHAN
+Clusters.Frontend,DIR-CLUS
+Concurrency.CoWorking,DIR-CONW
+Configuration.Manager,DIR-CMG
+Configuration.Proposals.Portal,DIR-CPP
+Configuration.Proposals.Portal.Entities,DIR-CPPE
+Configuration.Topology,DIR-TOPOLOGYLIB
+Configuration.Topology.Routing,DIR-CTR
+Connectivity.CallController,DIR-CONCC
+Connectivity.CallController.API,DIR-CONAPI
+Connectivity.CallController.Client,DIR-CONC
+Connectivity.CallController.Contracts,DIR-CON
+Connectivity.Configuration.ArchiveLocations.Frontend,DIR-CCALF
+Connectivity.Configuration.AutoCreation,DIR-CONAC
+Connectivity.Configuration.CommPlatform.Entities,DIR-CCCE
+Connectivity.Configuration.CommunicationPlatforms.Frontend,DIR-CPF
+Connectivity.Configuration.LinkGroups.Frontend,DIR-CONLIGR
+Connectivity.Configuration.Links.Frontend,DIR-CONLIN
+Connectivity.Configuration.PlatformConnections.Frontend,DIR-PLATCON
+Connectivity.Configuration.Portal,DIR-CCP
+Connectivity.Configuration.RecordedUserGroups.Frontend,DIR-CCRGF
+Connectivity.Configuration.RecordedUsers.Frontend,DIR-RUF
+Connectivity.Configuration.RecordingProfileGroups.Frontend,DIR-CCRPGF
+Connectivity.Configuration.User.Entities,DIR-CONCUE
+Connectivity.Connection.State.API,DIR-CONCSA
+Connectivity.Integration.Tests,DIR-CIT
+CoreLibraries.AspNetCore,DIR-ASPCORE
+CoreLibraries.WindowsService,DIR-CORWIN
+DemoHotFixDelivery,DIR-DHFD
+Deployment.Agent,DIR-DAG
+Deployment.Agent.TestBinaries,DIR-DAGTB
+Deployment.Entities.RoleDefinition,DIR-DERD
+Deployment.InstallerCreator,DIR-DIC
+Deployment.IntegrationTests,DIR-DEP
+Deployment.Manager,DIR-DMA
+Deployment.PackageSigning,DIR-DEPSIGN
+Deployment.PerformanceTests,DIR-DEPPERF
+Downloads.Api,DIR-DOWA
+Downloads.Frontend,DIR-DOWFE
+Downloads.Portal,DIR-DOW
+Downloads.Service,DIR-DOWS
+Downloads.Shared,DIR-DOWH
+FrontendTranslationProxy,DIR-FRTRANS
+Gateway.Integration.Tests,DIR-GIT
+Generate swagger.doc,DIR-GS
+HangfireIssue.ExampleService,DIR-HAN
+Health.FrontEnd,DIR-HEAL
+Health.Manager,DIR-HEALMNG
+Health.Node,DIR-HEALND
+HotFix-10.5.4-Portal-RecordedUser-MNH-51062-CS2963167,DIR-CS2963167
+Integration.Cloud9,DIR-INTEGRATIONCLOUD9
+Integration.Generic.Get,DIR-ING
+Integration.Generic.Post,DIR-IN
+Integration.RingCentral,DIR-INRC
+Integration.Vodafone,DIR-IV
+Integration.Zoom,DIR-INZOOM
+Interaction.IngestionInterface,DIR-LCMIII
+Interaction.MediaRetrieval,DIR-IMR
+Interaction.Playback.Portal,DIR-PP
+LCM.Archive.Operation.Worker,DIR-LCOW
+LCM.Background.Workers,DIR-LCMBAC
+LCM.Configuration.Entities,DIR-LCMCE
+LCM.Configuration.Portal,DIR-LCMCOP
+LCM.DataAccess,DIR-LCMDAT
+LCM.Event.Entities,DIR-LCMEENT
+LCM.Event.Publisher,DIR-LCMEV
+LCM.Hold.Api,DIR-LCMHAPI
+LCM.Hold.Entities,DIR-LCMHOLENT
+LCM.Hold.Portal,DIR-LCMHOLD
+LCM.HoldRule.Api,DIR-LCMHRA
+LCM.HoldRule.Frontend,DIR-LCMHOL
+LCM.HoldRule.Monitor,DIR-LCMCON
+LCM.HoldRule.Portal,DIR-LCMHOLAPI
+LCM.HoldRule.Worker,DIR-LCMHRW
+LCM.Ingestion,DIR-LCMIG
+LCM.InteractionApi (deprecated),DIR-LCMINTERACTIONAPI
+LCM.InternalDefinitions,DIR-LCMIN
+LCM.Monitor,DIR-LCMMON
+LCM.RetentionUpdate.Api,DIR-LCMRUA
+LCM.RetentionUpdate.Frontend,DIR-LCMRETFE
+LCM.RetentionUpdate.Monitor,DIR-LCMRUP
+LCM.RetentionUpdate.Portal,DIR-LCMRET
+LCM.RetentionUpdate.Worker,DIR-LCMRUW
+LCM.TestData.Generator,DIR-LCMTES
+LegacyRecorder.ConfigMigration,DIR-LRCM
+LegacyRecorder.Migration,DIR-LRMG
+LegacyRecorder.RealtimeIngestion,DIR-LEG
+License.Management.Frontend,DIR-LMF
+License.Portal,DIR-LIP
+License.Worker,DIR-LIW
+LinkController.Cisco.Cucm,DIR-LCCC
+Localization.Frontend,DIR-LOC
+Logger.Capture,DIR-DAF
+Logger.Capture.Server,DIR-LOGSER
+Logger.Client,DIR-LICL
+Logger.Contracts,DIR-LIC
+Logger.Integration.Tests,DIR-LOG
+Logger.Interaction.Entities,DIR-LOGINTENT
+Maintenance.Frontend,DIR-MAINT
+Maintenance.Portal,DIR-MAIN
+Manhattan.DesignSystem,DIR-MDS
+Media.Processing,DIR-MEP
+Media.Retrieval,DIR-MED
+NTRX Aggregate,DIR-DAP
+NTRX Documentation (Discontinued),DIR-NTRXDOC
+NTRX PowerRetrieval AddOn,DIR-PRADDON
+NTRX RabbitMQ,DIR-NRE
+NTRX RabbitMQ BackupRestore,DIR-RMQBR
+NTRX RabbitMQ Dead Letter Helper,DIR-RDH
+NTRX-MicroService,DIR-EXAMPLESRV
+NTRX.IntegrationTestHelper,DIR-NTRXIN
+NTRX.LT.Deployer,DIR-NTRXLTDEP
+NTRX.Portal.Registry.Settings,DIR-NTRXPRS
+NTRX.Registry.Settings,DIR-NTRXREG
+NTRX.Requests.Queue,DIR-NTRXREQ
+NTRX.SDS.Deployer,DIR-NTRXSDSDEP
+NtrxUIProject,DIR-NTRXUIP
+OpenIdConnect.Server.Mock,DIR-OCSM
+Portal.HelmChart,DIR-PORCHART
+PowerRetrieval.Configuration.FrontEnd,DIR-PRCONFFE
+PowerRetrieval.Node,DIR-PRNODE
+PowerRetrieval.Portal,DIR-POW
+Public.Api,DIR-PUB
+Public.Api.Configuration.Portal,DIR-PUBCP
+Reconciliation.Api,DIR-REC
+Reconciliation.FrontEnd,DIR-RECUI
+Reconciliation.Portal,DIR-RECP
+Reconciliation.Service,DIR-RECSVC
+Reconciliation.Shared,DIR-RECH
+RecordingCheck.Agent.BlueWave,DIR-RECAG
+RecordingCheck.Agent.Jtapi,DIR-RAJ
+RecordingCheck.Frontend,DIR-RECF
+RecordingCheck.Portal,DIR-RCKP
+RecordingCheck.TestExecutor,DIR-RECTE
+RecordingRules.Frontend,DIR-RRULE
+Reporting.Alarming.Portal,DIR-REPAP
+Reporting.Configuration.Portal,DIR-REPCP
+Reporting.Frontend,DIR-REPFE
+Reporting.HistoricalIngestion,DIR-REPHI
+Reporting.Ingestion.Client,DIR-REPCLI
+Reporting.Ingestion.Portal,DIR-RIAPI
+Reporting.Monitor,DIR-LCMREP
+Reporting.Portal,DIR-REP
+Reporting.PowerBI,DIR-REPBI
+Search.FrontEnd,DIR-SRCUI
+Search.Interactions,DIR-SEAR
+Search.Interactions.DbGenerator,DIR-SDBGEN
+Search.Interactions.Portal,DIR-SIP
+SelectiveRecording.Portal,DIR-SRPOR
+Service.Monitor,DIR-SERMON
+SharedFrontendAssets,DIR-SHFA
+SharedFrontendDependencies,DIR-SFDEP
+Topology.Builder,DIR-TOPBUI
+Topology.FrontEnd,DIR-TOP
+Translation.Portal,DIR-TRAN
+User.Management.Coverages.FrontEnd,DIR-USC
+User.Management.FrontEnd,DIR-UMF
+UserManagement.Portal,DIR-US
+UserManagement.Roles.FrontEnd,DIR-USR
+UserManagement.Scopes.FrontEnd,DIR-USF
+UserNotification.Portal,DIR-UNP
+WeTest,DIR-WET
+Azurite.HelmChart,TEAMS-AZ
+IntegrationSetup.Microsoft.Teams,TEAMS-ISMT
+MicrosoftTeams.Alarming,TEAMS-MTA
+MicrosoftTeams.Automation,TEAMS-MSTAT
+MicrosoftTeams.AzureSetup,TEAMS-MAS
+MicrosoftTeams.AzureTemplate,TEAMS-MIC
+MicrosoftTeams.Chat.Capture,TEAMS-MSCHCA
+MicrosoftTeams.Chat.ExportApiMock,TEAMS-EAM
+MicrosoftTeams.Chat.Simulator,TEAMS-MSTCS
+MicrosoftTeams.Chat.Transcoding,TEAMS-MTCT
+MicrosoftTeams.GraphIntegrationCheck,TEAMS-MTGIC
+MicrosoftTeams.HelmChart,TEAMS-MHC
+MicrosoftTeams.Licensing,TEAMS-MTALS
+MicrosoftTeams.Metadata,TEAMS-MTMETA
+MicrosoftTeams.NtrX.AzureConfigPush,TEAMS-AZCON
+MicrosoftTeams.NtrX.Connections,TEAMS-NTRXCN
+MicrosoftTeams.NtrX.RecordingProfiles,TEAMS-NTRXRP
+MicrosoftTeams.RecordingIntegrationCheck,TEAMS-MTRIC
+MicrosoftTeams.RecordingService,TEAMS-MSTEAMS
+MicrosoftTeams.RecordOnDemand,TEAMS-MSROD
+MicrosoftTeams.RecordOnDemand.PubSub,TEAMS-RPS
+MicrosoftTeams.Replay,TEAMS-MIR
+MicrosoftTeams.Retrieval,TEAMS-MTRC
+MicrosoftTeams.RetrievalService,TEAMS-DATRET
+MicrosoftTeams.TestDataGenerator,TEAMS-TES
+MicrosoftTeams.TestTools.Id,TEAMS-MTID
+MicrosoftTeams.Transcoding.Media.PerformanceTools,TEAMS-MTPFT
+MicrosoftTeams.TranscodingService,TEAMS-MSTXC
+TestPlan,TEAMS-TEST01
+CyberTech.Migration,NICEMIG-CYBMIG
+Nice.Migration.NtrToNtr,NICEMIG-MIGN2N
+Nice.Migration.Vpi,NICEMIG-MIGVPI
+NtrPlaybackPortalMigration,NICEMIG-NPBMIG
+AudioPostProcessor,MIS-AUDPPS
+Avaya.AES.Simulator,MIS-AVAES
+Avaya.TSAPIClient,MIS-TSAPCLI
+CallGenerator,MIS-CAL
+ComponentSetup.SharedCdr,MIS-COMSCD
+Connectivity.CaptureApi,MIS-CONCAP
+CopyWavFile,MIS-COPWAF
+CTI_Receiver,MIS-CTIREC
+CyberTech.Adapter.BT-IP,MIS-CYBADP
+CyberTech.OpenCallController,MIS-CYBOCC
+CyberTech.Testing.CallGenerator,MIS-CTC
+CyberTech.Wix.Connectivity,MIS-CYBWCT
+DaSpeechDetector,MIS-DASDET
+IntegrationSetup.MVR,MIS-INMVR
+LinkController.FPSLink,MIS-LINFPS
+LinkController.NorTel,MIS-LINNRT
+MVR,MIS-MVR
+MysqlScripts.Connectivity,MIS-MYSCNT
+netfx462,MIS-NET462
+netfx47,MIS-NET47
+Nice.Acme.ISR.ConnectionTester,MIS-NICACT
+ParrotApi,MIS-PARAPI
+RecordingService,MIS-RECSRC
+ServiceLogCollectorFilebeat,MIS-LOGCOLLECT
+ServiceMonitor,MIS-SERMNT
+UChat,MIS-UCHAT
+UChatBases,MIS-UCBAS
+Nice.ActiveIntelligenceEngine.ODBC,NIC-NIC
+Nice.Ingest.Get,NIG-NIGG
+Nice.Ingest.Get.Setup,NIG-NIC
+Nice.Ingest.Post,NIG-NIGP
+Nice.Ingest.Post.Setup,NIG-NIS
+ArchiveLocation.TestTool,NTR-ALT
+ComponentSetup.Core.Misc,NTR-CORE
+ComponentSetup.Core.UI,NTR-WEBGUI
+ComponentSetup.Filebeat,NTR-FILEBEAT
+CyberTech.ContentManager,NTR-COM
+CyberTech.ContentManager.Imports,NTR-CMI
+CyberTech.MediaManager.Client,NTR-CYBMMC
+CyberTech.MySql.Setup,NTR-CTMYSS
+CyberTech.PlayerComponents,NTR-CYBPLAY
+CyberTech.Recorder.Setup.6.6,NTR-REC66
+CyberTech.Recorder.Setup.6.7+ (NTR 6.7+ setup and higher),NTR-NTR67
+CyberTech.RecorderApi,NTR-RECAPI
+CyberTech.SystemManager,NTR-CYBSSM
+DBI-Client,NTR-DBIC
+MySql.Binaries,NTR-MYSQL
+Nice.ContentManager.Binaries,NTR-NCB
+Nice.DaylightSavings.Tool,NTR-DLS
+Nice.EmcCenteraSdk,NTR-EMC
+NICE.LogClean,NTR-LOGC
+Nice.MediaSources.NTR,NTR-MSN
+Nice.PlaybackPortal.Helper,NTR-PBP
+Nice.Recorder.HistoricalIngestionAgent,NTR-HIA
+NiceApplications.Playback,NTR-NMF
+NTR Webgui Legacy Components,NTR-NWLC
+PasswordTool,NTR-PAS
+RealtimePlay,NTR-REAL
+"Recorder.Configuration (.service, .ReaderClient, and .WriterClient)",NTR-CONFIG
+CyberTech.ContentManager BRA-v2.17.0,NTRP-CB2
+HF REC6.6.10 CM c,NTRP-HRCC
+HF REC6.6.10 UI c,NTRP-HF6610UI
+HF REC6.6.11 CM c,NTRP-HF6611CM
+HF REC6.6.11 UI c,NTRP-HF6611UI
+HF REC6.6.8 CHN cs,NTRP-CHNP
+HF REC6.6.8 CM c,NTRP-NTRCMP
+HF REC6.6.8 COMM cs,NTRP-COMMP
+HF REC6.6.8 CORE c,NTRP-CORE
+HF REC6.6.8 UI c,NTRP-UI8140
+HF REC6.6.9 CHN cs,NTRP-HRCC669
+HF REC6.6.9 CM c,NTRP-HRCCR
+HF REC6.6.9 UI c,NTRP-HF669UI
+HF REC6.7.1 CM c,NTRP-HF671CM
+HF REC6.7.1 COMM cs,NTRP-HF671COMM
+HF REC6.7.1 UI c,NTRP-HF671UI
+HF REC6.7.10 UI c,NTRP-HF6710UI
+HF REC6.7.13 UI c,NTRP-HRUC
+HF REC6.7.14 CM c,NTRP-HF6714CM
+HF REC6.7.16 UI c,NTRP-HF6716UI
+HF REC6.7.3 UI c,NTRP-HF673UI
+HF REC6.7.4 CHN cs,NTRP-HFR674CHN
+HF REC6.7.4 CM c,NTRP-HF674CM
+HF REC6.7.4 CORE c,NTRP-HRCCMISC
+HF REC6.7.4 CS cs,NTRP-HFPCS
+HF REC6.7.4 UI c,NTRP-HF674UI
+Core Server Resilience,NR-CSR
+CSR Support Tool,NR-CST
+CTI Server Resilience,NR-CTISR
+CyberTech.Redundancy,NR-CYBRED
+CyberTech.Redundancy 2.11.0,NR-RED211
+Resilience GUI and Schema,NR-RGS
+Erlang,NPF3P-ERLA
+Firebird,NPF3P-FIR
+LibMp3Lame,NPF3P-LIBMP3
+MySql56.Binaries,NPF3P-MYSBIN
+Nice.Dart.PowerSNMP,NPF3P-DAR
+NICE.GstSharp,NPF3P-GSTSH
+NICE.GstSharp.Test,NPF3P-GTEST
+Nice.Microsoft.ApplicationRequestRouting,NPF3P-ARR
+Nice.Microsoft.DotNet,NPF3P-MSDN
+Nice.Microsoft.DotNetCore,NPF3P-MSDNC
+Nice.Microsoft.DotNetCoreDesktop,NPF3P-NDR
+Nice.Microsoft.DotNetDesktop,NPF3P-NETD
+Nice.Microsoft.IISRewrite,NPF3P-NIC
+Nice.Microsoft.SqlNativeClient2012,NPF3P-NMSSNC
+Nice.Microsoft.vcredist100,NPF3P-NMVR100
+Nice.Microsoft.vcredist120,NPF3P-VCR120
+Nice.Microsoft.vcredist140-160,NPF3P-VCR140
+Nice.MyODBC,NPF3P-NICODBC
+Nice.Wix314,NPF3P-WIX314
+RabbitMQ,NPF3P-RABMQ
+RabbitMQ-With Nunit enabled,NPF3P-RNE
+Telerik-Asp.Net.Ajax,NPF3P-TEL
+IntegrationSetup.Etrali.OpenTrade,OPT-INEOT
+Automatic.Branch.Merging.PoC,PLAYG-ABM
+Bamboo.Cop,PLAYG-BAMCOP
+BaseResolveJarsFromArtifactory,PLAYG-BAS
+BlueWave POC,PLAYG-BP
+CoWorking,PLAYG-COW
+Cristian Playground,PLAYG-CPG
+CS.Installer.SetupAutomation,PLAYG-CSUITA
+CS.Installer.WebAutomation,PLAYG-CSIN
+CustomerConfig,PLAYG-CUS
+Dmitry.Nice.ApplicationFramework,PLAYG-DMIT
+Hans,PLAYG-HANS
+IncrementerConfigTest,PLAYG-INCCT
+InteractionDetection.Node,PLAYG-INDETNODE
+InteractionDetection.Portal,PLAYG-INDETPORT
+MarcoImprovementDay20170517,PLAYG-MAR
+MNH.WebAut.PoC,PLAYG-MNHWEB
+Nexidia.AutomationDeploy,PLAYG-NEXAD
+nice-aie 3.5,PLAYG-NICE35
+nice-commons,PLAYG-NIC
+nice-commons2,PLAYG-NIC2
+NodeJs.Playground,PLAYG-NJSPG
+play jim,PLAYG-PJ
+PlayAllure,PLAYG-PLAYAL
+PlayAutomation,PLAYG-PLAYAUT
+PlayCompassApi,PLAYG-PLAYC
+PlayIevgeniia,PLAYG-PLAYIEV
+PlayJaimy,PLAYG-PLAYJ
+PlayProject,PLAYG-PLAYP
+PlayRobSidebar,PLAYG-PRSB
+POC.Integration.Zoom,PLAYG-PIZ
+projectbuild,PLAYG-PROJ
+QAPOC-Consumer-Contracts,PLAYG-QCC
+QAPOC-functional,PLAYG-QAP
+QAPOC-Provider-Contracts,PLAYG-QPC
+SCK_Docker,PLAYG-SCKDOC
+SCK_Docker_base,PLAYG-SCKDOCBASE
+SI Customer install pack test,PLAYG-SCIPT
+SI.WS2016Support,PLAYG-SIW2016
+Supervision-UpgradeFromPrevious,PLAYG-SUPUPGR
+Tapi.Setup.AutExtension,PLAYG-TAPISAUT
+TB.SetupAutomation,PLAYG-TBSET
+testenvironment,PLAYG-TES
+ThomasPlayground,PLAYG-TPGR
+YildBrokerMaven,PLAYG-YILM
+CdrDll.Siemens.OCS,SIEM-CDRDLLSIEM
+IntegrationSetup.Siemens.OCS,SIEM-ISUNIFY
+Base,SICC-BASE
+Base-1.20.6,SICC-BAS
+Citi Migration Customer Configuration,SICC-MCC
+GIC Migration Customer Configuration,SICC-GMCC
+MigrationStandardConnectivityKit,SICC-MIG
+Nice.SmartIndex.ResponseTransformers,SICC-RESP
+NordeaCustomerConfiguration,SICC-NOR
+StandardConnectivityKit,SICC-GEN
+StandardConnectivityKit-v1.2,SICC-SCK12
+StandardConnectivityKit-v1.3,SICC-STAN13
+StandardConnectivityKit-v1.4,SICC-STAN14
+Template,SICC-TEM
+WestpacCustomerConfiguration,SICC-WES
+BofACustomer,SICSC-BCSC
+BofASites,SICSC-BOAS
+CIBCCustomerSiteSpecificConfiguration,SICSC-CIBSS
+CIBCCustomerSpecificConfiguration,SICSC-CIB
+CITI Customer Specific Configuration,SICSC-CITICSC
+CitiOnPrem,SICSC-CITP
+CitiOnPremSite,SICSC-CITS
+GIC Customer Specific Configuration,SICSC-GCSC
+JPMCCustomerSiteSpecificConfiguration,SICSC-JPMCS
+JPMCCustomerSpecificConfiguration,SICSC-JPMC
+NomuraAEJCustomerSiteSpecificConfiguration,SICSC-NOMAS
+NomuraAEJCustomerSpecificConfiguration,SICSC-NOMA
+NomuraEMEACustomerSiteSpecificConfiguration,SICSC-NOMES
+NomuraEMEACustomerSpecificConfiguration,SICSC-NOME
+NordeaCustomerSiteSpecificConfiguration,SICSC-NORCS
+NordeaCustomerSpecificConfiguration,SICSC-NORC
+NordeaCustomerSpecificConfigurationOLD,SICSC-NORS
+PimcoCustomer,SICSC-PIMC
+PimcoSites,SICSC-PIMS
+RBCCustomerSiteSpecificConfiguration,SICSC-RBCS
+RBCCustomerSpecificConfiguration,SICSC-RBCC
+SchrodersCustomer,SICSC-SCHRC
+SchrodersSite,SICSC-SCHRS
+Template,SICSC-TEM
+TemplateLayer3,SICSC-TL3
+TemplateLayer4,SICSC-TL4
+WestpacCustomerSiteSpecificConfiguration,SICSC-WCSC
+WestpacCustomerSpecificConfiguration,SICSC-WCSCO
+Bloomberg,SIIP-BLOOM
+ConnectorTemplate,SIIP-CNTP
+Custom.Ntr.Ingest,SIIP-CUS
+FXT,SIIP-FXT
+InstallPack_Master,SIIP-IN
+MigrationInstallationPacks,SIIP-MIP
+Nice.Configuration.Nordea,SIIP-NOR
+Nice.Connector.EmailMailbox,SIIP-EMC
+Nice.Connector.MsgFile,SIIP-EXC
+Nice.Installpack.Bloomberg,SIIP-NIB
+Nice.Installpack.TRC,SIIP-NIT
+Nice.Installpack.Whitelisting,SIIP-NIW
+Nice.Installpacks.Nordea,SIIP-NIN
+Reconciliation Report,SIIP-RR
+WestPac SICSIP,SIIP-WSSICSIP
+YieldBroker,SIIP-YB
+YieldBroker_Build_Demo,SIIP-YIEL
+IntegrationSetup.Speakerbus.iTurret,SPEAKI-SETUP
+Project Counter,SR-PC
+ApplicationPlugins.Supervision.Plugin,SUP-SUPP
+Deploy SI+AS+Supervision,SUP-DS
+Supervision.Auditing,SUP-SUPA
+Supervision.Core,SUP-SUPCORE
+Supervision.Installer,SUP-SUP
+Supervision.Installer.InstallersAutomation,SUP-SUPNAR
+Supervision.UI,SUP-SUPUI
+SupervisionUIReactBuildSpike,SUP-SUIRBS
+SystemOverview.Alarming.Recorder,SYSOVW-SYSOAR
+SystemOverview.APFConfiguration.Plugin,SYSOVW-SYSAPF
+SystemOverview.Archiving.Plugin,SYSOVW-SYSAPL
+SystemOverview.AuditTrail.Fusion,SYSOVW-SYSATF
+SystemOverview.AuditTrail.Recorder,SYSOVW-SYSATR
+SystemOverview.Authentication.Fusion,SYSOVW-SYSOAF
+SystemOverview.Authentication.Interface,SYSOVW-SYSATI
+SystemOverview.Authentication.Recorder,SYSOVW-SYSACR
+SystemOverview.Compass.Channels.Plugin,SYSOVW-SYSCCP
+SystemOverview.Compass.Interactions.Plugin,SYSOVW-SYSCIP
+SystemOverview.Connectivity.Recorder,SYSOVW-SYSCONREC
+SystemOverview.Hold.Fusion,SYSOVW-SYSOHF
+SystemOverview.Installer,SYSOVW-SYSINS
+SystemOverview.Interface,SYSOVW-SYSOIF
+SystemOverview.NodeAgent,SYSOVW-SYSNAT
+SystemOverview.NodeAgent.Installer,SYSOVW-SYSNAI
+SystemOverview.NodeAgent.Interface,SYSOVW-SYSNAG
+SystemOverview.NodeAgent.Plugin,SYSOVW-SYSNAP
+SystemOverview.NodeAgentPlugin.RecorderDiskUsage,SYSOVW-SYSNAR
+SystemOverview.NodeAgentPlugin.Roles,SYSOVW-SYSNPR
+SystemOverview.PluginUtils,SYSOVW-SYSPUT
+SystemOverview.SmartIndexClient.Plugin,SYSOVW-SYSSIC
+SystemOverview.Topology.Plugin,SYSOVW-SYSTPP
+SystemOverview.Webservice,SYSOVW-SYSWSV
+TemplateLibrary,TMPLT-TEM
+CleanPool-W2016-TestAutomation,TES-CLEAN
+K8s.TestRunner,TES-K8STR
+MicrosoftTeams.TestTools.Idx,TES-IDX
+Certificates.Tool,TOOL-CERTOO
+CyberTech.Signing,TOOL-CTS
+Nice.NuGet.Pack,TOOL-NNP
+NiceNuBuild2017,TOOL-NUB17
+Patch Cached Msi,TOOL-PCM
+default,TRUP-DEF
+Vodafone.Face,VOD-VOD
+Vodafone.Face.Setup,VOD-VODS
