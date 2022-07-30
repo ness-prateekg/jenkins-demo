@@ -45,16 +45,37 @@ def create_config(dict_parameters):
     sub_elem_trim = ET.SubElement(sub_elem_string_definition,"trim")
     sub_elem_trim.text = "false"
     '''
+    
     sub_elem_parameters_property = ET.SubElement(sub_elem_properties,"hudson.model.ParametersDefinitionProperty")
     sub_elem_property_definition = ET.SubElement(sub_elem_parameters_property,"parameterDefinitions")
-    sub_elem_string_definition = ET.SubElement(sub_elem_property_definition,"hudson.model.StringParameterDefinition")
-    sub_elem_name = ET.SubElement(sub_elem_string_definition,"name")
-    sub_elem_name.text = dict_parameters['parameter_name']
-    sub_elem_parameter_description = ET.SubElement(sub_elem_string_definition,"description")
-    sub_elem_parameter_default = ET.SubElement(sub_elem_string_definition,"defaultValue")
-    sub_elem_parameter_default.text = "test-msbuild"
-    sub_elem_trim = ET.SubElement(sub_elem_string_definition,"trim")
-    sub_elem_trim.text = "false"
+    for item in dict_parameters['parameter_name']:
+        if item['type'] == 'Choice':
+            sub_elem_string_definition = ET.SubElement(sub_elem_property_definition,f"hudson.model.{item['type']}ParameterDefinition")
+            sub_elem_name = ET.SubElement(sub_elem_string_definition,"name")
+            sub_elem_name.text =item['name']
+            sub_elem_parameter_choices = ET.SubElement(sub_elem_string_definition,"choices")
+            sub_elem_parameter_choices.set("class","java.util.Arrays$ArrayList")
+            choice_string = """ <a class="string-array">
+                                <string>Gitlab-Jenkins-slave-msbuild-15-VM</string>
+                                <string>build-agent-fmc-cs-windows</string>
+                            </a>"""
+            choice_subelement = ET.fromstring(choice_string)
+            sub_elem_parameter_choices.insert(1, choice_subelement)
+            # print(ET.tostring(sub_elem_parameter_choices, encoding='unicode'))
+            sub_elem_parameter_default = ET.SubElement(sub_elem_string_definition,"defaultValue")
+            sub_elem_parameter_default.text = item['default']
+            sub_elem_trim = ET.SubElement(sub_elem_string_definition,"trim")
+            sub_elem_trim.text = "false"
+        else:
+            sub_elem_string_definition = ET.SubElement(sub_elem_property_definition,f"hudson.model.{item['type']}ParameterDefinition")
+            sub_elem_name = ET.SubElement(sub_elem_string_definition,"name")
+            sub_elem_name.text =item['name']
+            sub_elem_parameter_description = ET.SubElement(sub_elem_string_definition,"description")
+            sub_elem_parameter_default = ET.SubElement(sub_elem_string_definition,"defaultValue")
+            sub_elem_parameter_default.text = item['default']
+            sub_elem_trim = ET.SubElement(sub_elem_string_definition,"trim")
+            sub_elem_trim.text = "false"
+
 
 
     sub_elem_definition = ET.SubElement(data,"definition")
@@ -114,7 +135,7 @@ def create_job(job_name,xml, found_job, build = False):
             server.reconfig_job(job_name,xml)
             print(f"Reconfigured job: {job_name}")
         if build == True:
-                server.build_job(job_name, {'BRANCH_NAME': 'testing',  'SLAVE':'Gitlab-Jenkins-slave-msbuild-15-VM'})
+                server.build_job(job_name, {'BRANCH_NAME': 'test-msbuild',  'SLAVE':'Gitlab-Jenkins-slave-msbuild-15-VM'})
     except Exception as exc:
         print(exc)
         return False
@@ -142,7 +163,7 @@ def get_job_details(job_name):
 def prepare_build_parameters(git_url, git_credential_id, branch, jenkins_job_name, jenkinsFile_path):
     dict_parameters = {}
     dict_parameters.update({
-        "parameter_name" : "BRANCH_NAME",
+        "parameter_name" : [{"name":"BRANCH_NAME", "default":"test-msbuild", "type":"String"},{"name":"SLAVE", "default":"Gitlab-Jenkins-slave-msbuild-15-VM", "type":"Choice"}],
         "git_url" : git_url,
         'branch': branch,
         "git_cred_id" : git_credential_id,
@@ -165,7 +186,7 @@ if __name__ == "__main__":
     #     dict_parameters = prepare_build_parameters(git_url="gitlab@tlvgit03.nice.com:ActimizeDeployer/cs-solution.git", git_credential_id='act_fmc_ci_user',jenkins_job_name=job_name,branch = 'testing', jenkinsFile_path='pipeline/cs_solution_generic_build/Jenkinfiles_msbuild.groovy')
     #     code_startup(dict_parameters, found_job)
     #     print(f"Created/ Reconfigured: {job_name}")
-    job_name = "Erlang"
+    job_name = "Nice_Microsoft_ARR"
     found_job = get_job_details(job_name=job_name)
     dict_parameters = prepare_build_parameters(git_url="gitlab@tlvgit03.nice.com:ActimizeDeployer/cs-solution.git", git_credential_id='act_fmc_ci_user',jenkins_job_name=job_name,branch = 'testing', jenkinsFile_path='pipeline/cs_solution_generic_build/Jenkinfiles_msbuild.groovy')
     code_startup(dict_parameters, found_job, build=True)
