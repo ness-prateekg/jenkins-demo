@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<configuration>
+  <solution>
+    <add key="disableSourceControlIntegration" value="true" />
+  </solution>
+  <packageSources>
+    <add key="NICE NuGet Release Feed" value="https://artifactory.actimize.cloud/artifactory/api/nuget/nuget-release-aws-local" />
+    <add key="NICE NuGet Thirdparty Feed" value="https://artifactory.actimize.cloud/artifactory/api/nuget/nuget-thirdparty-local" />
+    <add key="NICE NuGet Snapshot Feed" value="https://artifactory.actimize.cloud/artifactory/api/nuget/nuget-snapshot-aws-local" />
+    <add key="Nuget.org Feed" value="https://artifactory.actimize.cloud/artifactory/api/nuget/nuget.org" />
+  </packageSources>
+  <activePackageSource>
+    <add key="NICE NuGet Release Feed" value="https://artifactory.actimize.cloud/artifactory/api/nuget/nuget-release-aws-local" />
+    <add key="NICE NuGet Thirdparty Feed" value="https://artifactory.actimize.cloud/artifactory/api/nuget/nuget-thirdparty-local" />
+    <add key="NICE NuGet Snapshot Feed" value="https://artifactory.actimize.cloud/artifactory/api/nuget/nuget-snapshot-aws-local" />
+    <add key="Nuget.org Feed" value="https://artifactory.actimize.cloud/artifactory/api/nuget/nuget.org" />
+  </activePackageSource>
+</configuration>
