@@ -1,0 +1,8 @@
+No properties.rsp for NiceTradingRecording.Configuration in test-msbuild
+No properties.rsp for NiceTradingRecording.Configuration in test-msbuild
+No properties.rsp for NiceTradingRecording.Configuration in test-msbuild
+No properties.rsp for NiceTradingRecording.Configuration in test-msbuild
+No properties.rsp for NiceTradingRecording.Configuration in test-msbuild
+No properties.rsp for NiceTradingRecording.Configuration in test-msbuild
+No properties.rsp for Nice.ApplicationPlugins.ComplianceDashboard in test-msbuild
+No properties.rsp for Nice.ApplicationPlugins.ComplianceDashboard in test-msbuild

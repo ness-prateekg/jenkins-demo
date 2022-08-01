@@ -1,10 +1,12 @@
 from nice_scritps.gitlab_utils import AutomateDotRSP
 import gitlab
+from pprint import pprint
 from gitlab.exceptions import GitlabHttpError, GitlabGetError
 from dotenv import load_dotenv
 from nice_scritps.jenkins_utils import build_job, get_job_details
 from nice_scritps.gitlab_utils import find_file, reconfigure_nuget_conf, reconfigure_nugettarget_conf, traverse_xml, target_xml
 from nice_scritps.file_lookup import FileLookup
+from jenkins import NotFoundException
 from gitlab.exceptions import GitlabCreateError
 import os
 
@@ -23,11 +25,11 @@ if __name__ == '__main__':
    
     gl = gitlab.Gitlab("https://tlvgit03.nice.com/","DkzGKCennR_FkpgLQpF_")
     gl.auth()
-    group_id = 1928
+    group_id = 1928 #cs group id
     group = gl.groups.get(group_id, lazy=True)
     #get all projects
     projects = group.projects.list(include_subgroups=True, all=True)
-    count = 0
+    # count = 0
     for project in projects:
         attempt = 0
         while True:
@@ -48,6 +50,7 @@ if __name__ == '__main__':
                 gl_branch_set = gl_branch_set[-2:]
                 for branch in gl_branch_set:
                     #create release-<number>-msbuild if not present
+                    og_branch = branch
                     if AutomateDotRSP.check_branch(gl_project=gl_project, branch_name=f"{branch}-msbuild"):
                         print(f"Branch found: {branch}-msbuild")
                         branch =  gl_project.branches.get(f"{branch}-msbuild")
@@ -58,11 +61,11 @@ if __name__ == '__main__':
                         branch = AutomateDotRSP.create_branch(gl_project=gl_project, branch_name=f"{branch}-msbuild", ref=branch)
                         branch = branch.__dict__["_attrs"]
                         print(f"Branch created for: {project_name_folder}-{branch['name']}")
+                    print("Original branch: ", branch['name'])
                     #create/update properties.rsp from test-msbuild
-                    solutions_project_dir = AutomateDotRSP.check_path_exists(gl_project=gl_project,file_path=f"solutions/{project_name_folder}/", branch_name=branch['name'])
-                    sln_exists = [x for x in solutions_project_dir if x['name']==f'{project_name_folder}.sln']
+                    solutions_dir =AutomateDotRSP.check_path_exists(gl_project=gl_project,file_path=f"solutions/", branch_name='test-msbuild')
+                    sln_exists = [x for x in solutions_dir if x['name'].endswith('.sln')]
                     if len(sln_exists) != 0:
-                        solutions_dir =AutomateDotRSP.check_path_exists(gl_project=gl_project,file_path=f"solutions/", branch_name='test-msbuild')
                         rsp_exists = [x for x in solutions_dir if x['name']=='properties.rsp']
                         if len(rsp_exists) != 0: 
                             # print(rsp_exists)
@@ -90,32 +93,46 @@ if __name__ == '__main__':
 
 
                         #nuget.config file changes
-                        file_details =  find_file(file_name = 'NuGet.Config', project_name_folder=project_name_folder, gl_project=gl_project, branch_name=branch['name'])
+                        file_details =  find_file(file_name = 'NuGet.Config', project_name_folder=project_name_folder, gl_project=gl_project, branch_name=og_branch)
                         if file_details:
                             #recreate nuget.config
-                            reconfigure_nuget_conf(gl_project=gl_project, project_dict=project_dict, file_path=file_details['file_details']['path'], branch_name=branch['name'])
-                            AutomateDotRSP.create_commit(gl_project, project_name_folder, f'solutions/{project_name_folder}/.nuget/NuGet.Config','temp/temp.xml', branch_name=branch['name'])
+                            reconfigure_nuget_conf(gl_project=gl_project, project_dict=project_dict, file_path=file_details['file_details']['path'], branch_name=og_branch)
+                            print(f"Creating commit for nuget.config for {project_name_folder}")
+                            AutomateDotRSP.create_commit(gl_project,
+                             project_name_folder, 
+                             f'solutions/{project_name_folder}/.nuget/NuGet.Config',
+                             'temp/temp.xml',
+                              branch_name=branch['name'])
                         else:
                             print(f"Could not find Nuget.config for {project_name_folder}")
-                        target_file_details =  find_file(file_name = 'NuGet.targets', project_name_folder=project_name_folder, gl_project=gl_project, branch_name=branch['name'])
+                        target_file_details =  find_file(file_name = 'NuGet.targets', project_name_folder=project_name_folder, gl_project=gl_project, branch_name=og_branch)
                         if target_file_details:
                             #recreate nuget.targets
-                            reconfigure_nugettarget_conf(gl_project=gl_project, project_dict=project_dict, file_path=file_details['file_details']['path'], branch_name=branch['name'])
-                            AutomateDotRSP.create_commit(gl_project, project_name_folder, f'solutions/{project_name_folder}/.nuget/NuGet.targets','temp/target.xml', branch_name=branch['name'])
+                            reconfigure_nugettarget_conf(gl_project=gl_project, project_dict=project_dict, file_path=target_file_details['file_details']['path'], branch_name=og_branch)
+                            print(f"Creating commit for nuget.target for {project_name_folder}")
+                            AutomateDotRSP.create_commit(gl_project,
+                             project_name_folder, 
+                             f'solutions/{project_name_folder}/.nuget/NuGet.targets',
+                             'temp/target.xml',
+                              branch_name=branch['name'])
                         else:
                             print(f"Could not find NuGet.targets for {project_name_folder}")
 
                         #Trigger jobs with release msbuild branch
                         job_name = project_name_folder.replace('.','_') 
                         found_job = get_job_details(job_name=job_name)
-                        build_job(job_name=job_name, repo_branch=branch['name'], slave="Gitlab-Jenkins-slave-msbuild-15-VM")
-                        if not found_job:
+                        try:
+                            build_job(job_name=job_name, repo_branch=branch['name'], slave="Gitlab-Jenkins-slave-msbuild-15-VM")
+                            if not found_job:
+                                print(f"No job foundfor {project_name_folder} in jenkins")
+                                with open("temp/no_job_found.txt",'a') as f:
+                                    f.write(f"No job found for {project_name_folder} in jenkins\n")
+                            else:
+                                print(f"Built job: {job_name}")
+                        except NotFoundException as exc:
                             print(f"No job foundfor {project_name_folder} in jenkins")
                             with open("temp/no_job_found.txt",'a') as f:
                                 f.write(f"No job found for {project_name_folder} in jenkins\n")
-                        else:
-                            print(f"Built job: {job_name}")
-
                     else:
                         print(f"sln file does not exist for {project_name_folder} in test-msbuild")
                         with open("temp/no_sln_file.txt",'a') as f:
