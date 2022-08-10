@@ -3,3 +3,4 @@ automate_jobs.py
 __pycache__
 jenkins._job_config.txt
 demo
+.env
