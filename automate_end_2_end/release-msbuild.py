@@ -23,8 +23,9 @@ def init_gl():
 
 if __name__ == '__main__':
    
-    gl = gitlab.Gitlab("https://tlvgit03.nice.com/","DkzGKCennR_FkpgLQpF_")
+    gl = gitlab.Gitlab(os.getenv("GITLAB_URL"), os.getenv("GITLAB_TOKEN"))
     gl.auth()
+    gl_logs = {}
     group_id = 1928 #cs group id
     group = gl.groups.get(group_id, lazy=True)
     #get all projects

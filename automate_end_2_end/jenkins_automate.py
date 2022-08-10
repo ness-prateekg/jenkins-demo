@@ -168,3 +168,11 @@ def prepare_build_parameters(git_url, git_credential_id, branch, jenkins_job_nam
         "jenkins_file":jenkinsFile_path
         })
     return dict_parameters
+
+
+if __name__ == '__main__':
+    job_name = "test_vm_creation"
+    found_job = get_job_details(job_name=job_name)
+    dict_parameters = prepare_build_parameters(git_url="gitlab@tlvgit03.nice.com:ActimizeDeployer/cs-solution.git", git_credential_id='act_fmc_ci_user',jenkins_job_name=job_name,branch = 'testing', jenkinsFile_path='pipeline/cs_solution_generic_build/Jenkinfiles_bloomberg.groovy')
+    code_startup(dict_parameters, found_job, build=False)
+    print(f"Created/ Reconfigured: {job_name}")

@@ -1,3 +1,10 @@
 No job found for ApplicationPlugins.Fusion.NtrClustersAdministration in jenkins
 No job found for ApplicationPlugins.Fusion.NtrClustersAdministration in jenkins
 No job found for ApplicationFramework.Jobs.Plugins.HistoricalIndexing.NTR in jenkins
+No job found for ApplicationPlugins.Fusion.NtrClustersAdministration in jenkins
+No job found for ApplicationPlugins.Fusion.NtrClustersAdministration in jenkins
+No job found for ApplicationFramework.Jobs.Plugins.HistoricalIndexing.NTR in jenkins
+No job found for ApplicationPlugins.Fusion.NtrClustersAdministration in jenkins
+No job found for ApplicationPlugins.Fusion.NtrClustersAdministration in jenkins
+No job found for ApplicationFramework.Jobs.Plugins.HistoricalIndexing.NTR in jenkins
+No job found for ActiveIntelligenceEngine.Setup in jenkins

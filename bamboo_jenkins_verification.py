@@ -34,6 +34,7 @@ def verify_artifacts(jobs_on_bamboo, jobs_on_jenkins):
         if not bamboo_plan.empty:
             bamboo_plan_key = bamboo_plan.values[0][1]
             print(bamboo_plan_key)
+            bamboo_artifacts = []
             plan_details = bamboo.project_latest_results(bamboo_plan_key, max_results=1)
             for p in plan_details:
                 if p['state']== 'Successful':
@@ -42,10 +43,14 @@ def verify_artifacts(jobs_on_bamboo, jobs_on_jenkins):
                     response = response.json()
                     artifacts = response['artifacts']['artifact']
                     
-                    bamboo_artifacts = [x for x in artifacts if x['link']['href'].split('/')[-1].split('.')[-1]=='msi' or x['link']['href'].split('/')[-1].split('.')[-1]=='zip' or x['link']['href'].split('/')[-1].split('.')[-1]=='nupkg' or x['link']['href'].split('/')[-1].split('.')[-1]=='exe']
+                    bamboo_artifacts = bamboo_artifacts.extend([x for x in artifacts if x['link']['href'].split('/')[-1].split('.')[-1]=='msi' or x['link']['href'].split('/')[-1].split('.')[-1]=='zip' or x['link']['href'].split('/')[-1].split('.')[-1]=='nupkg' or x['link']['href'].split('/')[-1].split('.')[-1]=='exe']) 
             #Jenkins artifacts
             # print(f"{server.get_build_info(j_job, number=9)['artifacts']}")
             jenkins_last_good_build_number = server.get_job_info(name=j_job)['lastCompletedBuild']['number']
+            
+            #ActiveIntelligenceEngine_Installer_Utils: j(17,18, 19) 
+            #ApplicationFramework_NDRWrapper: j(7,6,8)
+
             jenkins_artifacts = server.get_build_info(j_job, number=jenkins_last_good_build_number)['artifacts']
             # print(jenkins_artifacts)
             #get jenkins job header
@@ -72,14 +77,14 @@ def verify_artifacts(jobs_on_bamboo, jobs_on_jenkins):
                             df_dict = {'job_name':j_job, 'jenkins_job_url': j_job_url, 'is_msi': art['relativePath'].split('.')[-1]=='msi', 'file_size_j':int(jenkins_artifact_size), 'percent_error':percent_error_bamboo_jenkins,'Success':'False','art_found_bamboo':'True'}
                             print("Artifact crosses the error threshold")
                         df = pd.concat([df, pd.DataFrame([df_dict])], ignore_index=True)
-                        with open('bamboo_jenkins_verification.csv','a') as f:
-                            df.to_csv('bamboo_jenkins_verification.csv', mode = 'a',index = False, header = f.tell()==0)
+                        with open('bamboo_jenkins_verification_demo.csv','a') as f:
+                            df.to_csv('bamboo_jenkins_verification_demo.csv', mode = 'a',index = False, header = f.tell()==0)
                     else:
                         pass
                         print("Could not find package in bamboo by the name:  ",art['fileName'] )
                         df_dict = {'job_name':j_job, 'jenkins_job_url': j_job_url, 'is_msi': art['relativePath'].split('.')[-1]=='msi', 'file_size_j':int(jenkins_artifact_size), 'percent_error':percent_error_bamboo_jenkins,'Success':'False','art_found_bamboo':'False'}
-                        with open('bamboo_jenkins_verification.csv','a') as f:
-                            df.to_csv('bamboo_jenkins_verification.csv', mode = 'a',index = False, header = f.tell()==0)
+                        with open('bamboo_jenkins_verification_demo.csv','a') as f:
+                            df.to_csv('bamboo_jenkins_verification_demo.csv', mode = 'a',index = False, header = f.tell()==0)
             else:
                 print("No artifacts found for job: ", j_job)    
         else:
