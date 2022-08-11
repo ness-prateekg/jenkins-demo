@@ -1,13 +1,13 @@
 from bamboo_jenkins_verification import verify_artifacts
 import pandas as pd
 import os
-from nice_scritps.automate_properties_rsp import AutomateDotRSP
+from nice_scripts.automate_properties_rsp import AutomateDotRSP
 from gitlab.exceptions import GitlabHttpError, GitlabGetError
-from nice_scritps.file_lookup import FileLookup
+from nice_scripts.file_lookup import FileLookup
 import gitlab
 import xml.etree.ElementTree as ET
 from lxml import etree
-from nice_scritps.automate_properties_rsp import AutomateDotRSP
+from nice_scripts.automate_properties_rsp import AutomateDotRSP
 from jenkins_automate import get_job_details, code_startup, prepare_build_parameters
 
 gl = gitlab.Gitlab(os.getenv("GITLAB_URL"), os.getenv("GITLAB_TOKEN"))

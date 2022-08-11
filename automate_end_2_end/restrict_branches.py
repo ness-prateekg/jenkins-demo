@@ -1,11 +1,11 @@
-from nice_scritps.gitlab_utils import AutomateDotRSP
+from nice_scripts.gitlab_utils import AutomateDotRSP
 import gitlab
 from pprint import pprint
 from gitlab.exceptions import GitlabHttpError, GitlabGetError
 from dotenv import load_dotenv
-from nice_scritps.jenkins_utils import build_job, get_job_details
-from nice_scritps.gitlab_utils import find_file, reconfigure_nuget_conf, reconfigure_nugettarget_conf, traverse_xml, target_xml
-from nice_scritps.file_lookup import FileLookup
+from nice_scripts.jenkins_utils import build_job, get_job_details
+from nice_scripts.gitlab_utils import find_file, reconfigure_nuget_conf, reconfigure_nugettarget_conf, traverse_xml, target_xml
+from nice_scripts.file_lookup import FileLookup
 from jenkins import NotFoundException
 from gitlab.exceptions import GitlabCreateError
 import os

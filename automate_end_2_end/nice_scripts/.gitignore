@@ -1,0 +1,8 @@
+nice_env
+venv
+.env
+output_commit_logs
+repos_bb.csv.txt
+branch_info.csv
+__pycache__
+datafile.txt
