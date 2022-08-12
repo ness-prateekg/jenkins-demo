@@ -1,7 +1,8 @@
 from pprint import pprint
 import jenkins
+from gitlab.exceptions import GitlabHttpError, GitlabGetError
 import pandas as pd
-server = jenkins.Jenkins('https://ilactcje.nice.com/job/FMC/job/CS/', username='abaluapuri',password='A12345678b')
+
 
 import requests
 from requests.auth import HTTPBasicAuth 
@@ -10,9 +11,15 @@ import warnings
 #Creating a xml config file using Etree library
 import xml.etree.ElementTree as ET
 from lxml import etree
-
+import gitlab
+import os
 warnings.filterwarnings("ignore")
 #Defining the headers of the request as xml 
+
+
+gl = gitlab.Gitlab(os.getenv("GITLAB_URL"), os.getenv("GITLAB_TOKEN"))
+gl.auth()
+server = jenkins.Jenkins('https://ilactcje.nice.com/job/FMC/job/CS/', username='abaluapuri',password='A12345678b')
 headers = {'Content-Type':'application/xml'}
 
 def create_config(dict_parameters):
@@ -56,6 +63,8 @@ def create_config(dict_parameters):
             sub_elem_parameter_choices.set("class","java.util.Arrays$ArrayList")
             choice_string = """ <a class="string-array">
                                 <string>Gitlab-Jenkins-slave-msbuild-15-VM</string>
+                                <string>Gitlab-Jenkins-slave-msbuild-15-Build-Farm-VM</string>
+                                <string>Gitlab-Jenkins-slave-msbuild-15-Build-Farm-VM2</string>
                                 <string>build-agent-fmc-cs-windows</string>
                             </a>"""
             choice_subelement = ET.fromstring(choice_string)
@@ -98,14 +107,6 @@ def create_config(dict_parameters):
     sub_elm_submodule = ET.SubElement(sub_elm_scm,"submoduleCfg")
     sub_elm_submodule.set("class","list")
     sub_elm_extension = ET.SubElement(sub_elm_scm,"extensions")
-    #Incase you have sub folders to access from your git repo, use sparse checkout
-    # sub_elm_hudson_sparse = ET.SubElement(sub_elm_extension,"hudson.plugins.git.extensions.impl.SparseCheckoutPaths")
-    # sub_elm_sparse = ET.SubElement(sub_elm_hudson_sparse,"sparseCheckoutPaths")
-    # sub_elm_extension_sparse = ET.SubElement(sub_elm_sparse,"hudson.plugins.git.extensions.impl.SparseCheckoutPath")
-    # sub_elm_path_sparse = ET.SubElement(sub_elm_extension_sparse,"path")
-    # sub_elm_path_sparse.text = dict_parameters['sparse_checkout']
-    
-    #Script path is the place of the Jenkinsfile path in the git
     sub_elm_scriptpath = ET.SubElement(sub_elem_definition,"scriptPath")
     sub_elm_scriptpath.text = dict_parameters['jenkins_file']
 
@@ -176,8 +177,32 @@ def prepare_build_parameters(git_url, git_credential_id, branch, jenkins_job_nam
 
 
 if __name__ == '__main__':
-    job_name = "ActiveIntelligenceEngine_Installer_Utils"
-    found_job = get_job_details(job_name=job_name)
-    dict_parameters = prepare_build_parameters(git_url="gitlab@tlvgit03.nice.com:ActimizeDeployer/cs-solution.git", git_credential_id='act_fmc_ci_user',jenkins_job_name=job_name,branch = 'testing', jenkinsFile_path='pipeline/cs_solution_generic_build/Jenkinfiles_msbuild.groovy')
-    code_startup(dict_parameters, found_job, build=True)
-    print(f"Created/ Reconfigured: {job_name}")
+    group_id = 1928
+    group = gl.groups.get(group_id, lazy=True)
+    #get all projects
+    projects = group.projects.list(include_subgroups=True, all=True)
+    count = 0
+    for project in projects:
+        attempt = 0
+        while True:
+            try:
+                project_dict = project.__dict__["_attrs"]
+                #get project from gitlab
+                gl_project = gl.projects.get(project_dict['id'])
+                project_name_folder = project_dict['name']
+                print(f"{attempt + 1} try for {project_name_folder}")
+                job_name = project_name_folder.replace('.','_') 
+                # job_name = "ActiveIntelligenceEngine_Installer_Utils"
+                found_job = get_job_details(job_name=job_name)
+                dict_parameters = prepare_build_parameters(git_url="gitlab@tlvgit03.nice.com:ActimizeDeployer/cs-solution.git", git_credential_id='act_fmc_ci_user',jenkins_job_name=job_name,branch = 'testing', jenkinsFile_path='pipeline/cs_solution_generic_build/Jenkinfiles_msbuild.groovy')
+                code_startup(dict_parameters, found_job, build=True)
+                print(f"Created/ Reconfigured: {job_name}")
+            except GitlabHttpError as exc:
+                print("Got HTTP error ")
+                attempt += 1
+                continue
+            except GitlabGetError as exc:
+                print("Got Get error ")
+                attempt += 1
+                continue
+            break
